@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+   var array=["red","green","white","black","yellow"];
+document.write(array+"<br>");
+
+var x=prompt("What color do you want to add in the begining?");
+array.unshift(x);
+document.write(array+"<br>");
+
+
+var y=prompt("What color do you want to add in the end?");
+array.push(y);
+document.write(array+"<br>");
+var z=prompt("Add another two color in the begining");
+array.unshift(z);
+var a=prompt("Add color number two");
+array.unshift(a);
+document.write(array+"<br>");
+array.shift(0);
+document.write(array+"<br>");
+array.pop();
+document.write(array+"<br>");
+var b=+prompt("At what index do you want to add a color?");
+var c=prompt("Add color name");
+array.splice(b,0,c);
+document.write(array+"<br>");
+var d=+prompt("From which index do you want to delete a color?");
+var e=+prompt("How many colors do you want to delete");
+array.splice(d,e);
+document.write(array);
+
+    </script>
+</body>
+</html>
